@@ -32,6 +32,8 @@ export default function Login() {
             <User className="absolute left-4 w-5 h-5 text-white stroke-[2]" />
             <input
               type="text"
+              name="u_field_rnd123"
+              id="u_field_rnd123"
               placeholder="USERNAME"
               autoComplete="off"
               className="w-full bg-transparent border-2 border-white/40 rounded-lg py-4 px-12 text-white placeholder-white/60 text-xs tracking-[0.2em] focus:outline-none focus:border-white transition-colors"
@@ -42,9 +44,12 @@ export default function Login() {
           <div className="relative flex items-center">
             <Lock className="absolute left-4 w-5 h-5 text-white stroke-[2]" />
             <input
-              type="password"
+              type="text"
+              name="p_field_rnd456"
+              id="p_field_rnd456"
               placeholder="PASSWORD"
               autoComplete="new-password"
+              style={{ WebkitTextSecurity: 'disc' }}
               className="w-full bg-transparent border-2 border-white/40 rounded-lg py-4 px-12 text-white placeholder-white/60 text-xs tracking-[0.2em] focus:outline-none focus:border-white transition-colors"
             />
           </div>
