@@ -14,13 +14,19 @@ export default function Login() {
       <div className="relative z-10 w-full max-w-[400px] p-12 bg-[#1e3a8a] rounded-[24px] shadow-2xl flex flex-col items-center">
         
         {/* Brand Icon: Technical Equipment/System */}
-        <div className="relative flex items-center justify-center mb-10 text-white">
+        <div className="relative flex items-center justify-center mb-6 text-white">
           <div className="p-4 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20 shadow-inner">
             <Cpu className="w-12 h-12 stroke-[1.5]" />
           </div>
         </div>
 
-        <form className="w-full space-y-4 mb-8" onSubmit={(e) => e.preventDefault()}>
+        {/* Title */}
+        <div className="text-center text-white mb-10">
+          <h1 className="text-[17px] font-semibold mb-2 leading-relaxed">ប្រព័ន្ធកម្មវិធីគ្រប់គ្រងសម្ភារបច្ចេកទេស</h1>
+          <h2 className="text-[10px] tracking-[0.2em] font-bold text-sky-200">TECHNICAL INVENTORY SYSTEM</h2>
+        </div>
+
+        <form className="w-full space-y-4 mb-2" onSubmit={(e) => e.preventDefault()}>
           {/* Username Input */}
           <div className="relative flex items-center">
             <User className="absolute left-4 w-5 h-5 text-white stroke-[2]" />
@@ -44,19 +50,11 @@ export default function Login() {
           {/* Login Button */}
           <button
             type="submit"
-            className="w-full bg-white py-4 rounded-lg text-[#1e3a8a] font-bold text-sm tracking-widest hover:bg-sky-50 transition-colors mb-6 shadow-lg"
+            className="w-full bg-white py-4 rounded-lg text-[#1e3a8a] font-bold text-sm tracking-widest hover:bg-sky-50 transition-colors shadow-lg"
           >
             LOGIN
           </button>
         </form>
-
-        {/* Forgot Password Link */}
-        <a
-          href="#"
-          className="text-white/70 text-[10px] uppercase tracking-widest hover:text-white transition-colors"
-        >
-          Forgot password?
-        </a>
       </div>
 
       {/* Branding Decoration */}
