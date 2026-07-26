@@ -26,13 +26,14 @@ export default function Login() {
           <h2 className="text-[10px] tracking-[0.2em] font-bold text-sky-200">TECHNICAL INVENTORY SYSTEM</h2>
         </div>
 
-        <form className="w-full space-y-4 mb-2" onSubmit={(e) => e.preventDefault()}>
+        <form className="w-full space-y-4 mb-2" onSubmit={(e) => e.preventDefault()} autoComplete="off">
           {/* Username Input */}
           <div className="relative flex items-center">
             <User className="absolute left-4 w-5 h-5 text-white stroke-[2]" />
             <input
               type="text"
               placeholder="USERNAME"
+              autoComplete="off"
               className="w-full bg-transparent border-2 border-white/40 rounded-lg py-4 px-12 text-white placeholder-white/60 text-xs tracking-[0.2em] focus:outline-none focus:border-white transition-colors"
             />
           </div>
@@ -43,6 +44,7 @@ export default function Login() {
             <input
               type="password"
               placeholder="PASSWORD"
+              autoComplete="new-password"
               className="w-full bg-transparent border-2 border-white/40 rounded-lg py-4 px-12 text-white placeholder-white/60 text-xs tracking-[0.2em] focus:outline-none focus:border-white transition-colors"
             />
           </div>
