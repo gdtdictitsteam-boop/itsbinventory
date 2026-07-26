@@ -1,0 +1,6 @@
+{
+  "name": "Inventory Management",
+  "description": "A minimalist inventory management system with a secure login interface.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
